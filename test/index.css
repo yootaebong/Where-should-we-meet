@@ -1,6 +1,10 @@
+/*
+*전체공지*스틱코드에 로그인하여 더 많은 코드와 기능을 만나보세요,  http://test.stickode.com:19180/login.html
+*/
 html{
     font-size: 12px;
 }
+
 
 body{
     margin: 0;
@@ -10,6 +14,7 @@ body{
     min-height: 100vh;
 }
 
+
 body > nav{
     height: 50px;
     display: flex;
@@ -18,11 +23,18 @@ body > nav{
     padding : 0 0 0 5%;
 }
 
+
 body > main{
     flex: 1;
     border-top : 1px solid #e1e4e8;
     border-bottom : 1px solid #e1e4e8;
+
+
+    /* 추가된 코드 */
+    display: flex;
+    flex-basis: 33%;
 }
+
 
 body > footer{
     height: 50px;
@@ -30,4 +42,23 @@ body > footer{
     align-items: center;
     font-size: 2rem;
     padding : 0 0 0 5%;
+}
+
+
+
+/* 변경 코드 */
+.main__div--map{    
+    flex:2;
+}
+
+/* 추가 코드 */
+.main__div--userList{
+    flex: 1;
+    border-right: 1px solid #e1e4e8;
+    text-align: center;
+}
+/* 추가 코드 */
+.main__div--locationFinderWrapper{
+    flex : 1;
+    text-align: center;
 }

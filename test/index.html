@@ -1,0 +1,54 @@
+<!--
+*전체공지*스틱코드에 로그인하여 더 많은 코드와 기능을 만나보세요,  http://test.stickode.com:19180/login.html
+-->
+<!DOCTYPE html>
+<html lang="kr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 어디서 만나?</title>
+
+
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=318822f6790200b25a1221dd0f78bf1e&libraries=services"></script>
+
+</head>
+
+
+<body>
+    <nav>우리 어디서 만나? (중간 지점 찾기)</nav>
+    <main>
+        <div id="kakaoMap" class="main__div--map"></div>
+        <!-- 인원 현황을 보여주는 영역 -->
+        <section class="main__div--userList">
+            <h2>인원 현황</h2>
+            <!-- 인원 현황 아이템들이 들어갈 위치 -->
+            <ul id="userList">
+            </ul>
+        </section>
+        <!-- 사용자 추가를 위한 검색 목록-->
+        <section class="main__div--locationFinderWrapper">
+            <h2>사용자 추가하기</h2>
+            <!-- 사용자를 추가할 때 위치를 검색 할수 있는 곳 입니다. -->
+            <div>
+                <!-- 위치를 입력할 곳 -->
+                <input id="locationFinderInput" />
+                <!-- 위치 검색 버튼 -->
+                <button onclick="locationFinderBtnClick(this)">위치 검색</button>
+            </div>
+            <!-- 실질적으로 검색 결과 아이템이 들어갈 위치 -->
+            <ul id="locationFinderList">
+            </ul>
+        </section>
+    </main>
+    <footer>Have fun developing</footer>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+
+</html>
